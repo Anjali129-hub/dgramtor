@@ -1,36 +1,358 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Dgramtor
 
-## Getting Started
+![Dgramtor Banner](public/images/logo.png)
 
-First, run the development server:
+Dgramtor is an advanced holographic communication platform designed to bring people together through immersive real-time 3D interactions.
+
+The platform enables organizations, educators, healthcare professionals, enterprises, and government institutions to communicate as if they were physically present in the same room using holographic technology.
+
+## Live Demo
+
+https://dgramtor1.vercel.app
+
+---
+
+## Overview
+
+Dgramtor transforms remote communication into realistic holographic experiences.
+
+The platform focuses on:
+
+- Live 3D holographic communication
+- Real-time collaboration
+- Multi-location connectivity
+- Enterprise-grade communication solutions
+- Immersive education and training
+- Healthcare consultations and collaboration
+- Government and corporate communication
+
+---
+
+## Features
+
+### Home Page
+
+- Modern holographic hero section
+- Video showcase section
+- Education-focused presentation
+- Conference room demonstration
+- Responsive design
+- Smooth animations
+
+### Solutions Page
+
+- Education
+- Healthcare
+- Corporate
+- Government
+- Entertainment
+- Real Estate
+
+### About Section
+
+- Company overview
+- Mission & Vision
+- Future roadmap
+
+### User Experience
+
+- Fully responsive
+- Mobile friendly
+- Fast loading
+- SEO ready
+- Accessibility focused
+
+---
+
+## Technology Stack
+
+### Frontend
+
+- Next.js 15
+- React 19
+- TypeScript
+- Tailwind CSS
+- Framer Motion
+- Lucide React
+
+### Deployment
+
+- Vercel
+
+### Development Tools
+
+- ESLint
+- PostCSS
+- Git
+- GitHub
+
+---
+
+## Project Structure
+
+```text
+src
+│
+├── app
+│   ├── page.tsx
+│   ├── about
+│   ├── contact
+│   ├── product
+│   ├── solutions
+│   └── request-demo
+│
+├── components
+│   ├── hero
+│   ├── navbar
+│   ├── footer
+│   ├── video-section
+│   ├── education-section
+│   ├── conference-room
+│   ├── mission-vision
+│   ├── why-dgramtor
+│   └── cta
+│
+├── lib
+│
+└── styles
+
+public
+│
+├── images
+├── videos
+└── icons
+```
+
+---
+
+## Installation
+
+### Clone Repository
+
+```bash
+git clone https://github.com/YOUR_USERNAME/dgramtor.git
+```
+
+### Navigate to Project
+
+```bash
+cd dgramtor
+```
+
+### Install Dependencies
+
+```bash
+npm install
+```
+
+### Run Development Server
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Application runs at:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```text
+http://localhost:3000
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+## Production Build
 
-To learn more about Next.js, take a look at the following resources:
+Create production build:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```bash
+npm run build
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Run production server:
 
-## Deploy on Vercel
+```bash
+npm start
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Environment Variables
+
+Create:
+
+```bash
+.env.local
+```
+
+Example:
+
+```env
+NEXT_PUBLIC_SITE_URL=http://localhost:3000
+```
+
+Add additional API keys if required.
+
+---
+
+## Design System
+
+### Colors
+
+Primary Green
+
+```css
+#22c55e
+```
+
+Background
+
+```css
+#000000
+```
+
+Text
+
+```css
+#ffffff
+#9ca3af
+```
+
+### Design Principles
+
+- Futuristic UI
+- Glassmorphism
+- Holographic effects
+- Green glow accents
+- Dark premium theme
+- Responsive layouts
+
+---
+
+## Industry Applications
+
+### Education
+
+- Virtual classrooms
+- Interactive lectures
+- Remote learning
+
+### Healthcare
+
+- Remote consultations
+- Specialist collaboration
+- Medical education
+
+### Corporate
+
+- Executive meetings
+- Team collaboration
+- Global communication
+
+### Government
+
+- Administrative communication
+- Secure remote interactions
+
+### Entertainment
+
+- Live holographic events
+- Virtual performances
+
+### Real Estate
+
+- Virtual property walkthroughs
+- Interactive client presentations
+
+---
+
+## Performance Goals
+
+- Fast page load times
+- Optimized assets
+- Mobile responsiveness
+- SEO optimization
+- Accessibility compliance
+
+---
+
+## Deployment
+
+Deploy easily with Vercel:
+
+```bash
+npm run build
+```
+
+Connect GitHub repository and deploy using:
+
+https://vercel.com
+
+---
+
+## Future Roadmap
+
+### Phase 1
+
+- Product showcase
+- Industry solutions
+- Demo request system
+
+### Phase 2
+
+- Blog platform
+- Case studies
+- Customer portal
+
+### Phase 3
+
+- Analytics dashboard
+- Admin panel
+- Multi-language support
+
+### Phase 4
+
+- AI-powered holographic interactions
+- Enterprise integrations
+- Global deployment
+
+---
+
+## Contributing
+
+1. Fork repository
+2. Create feature branch
+
+```bash
+git checkout -b feature/new-feature
+```
+
+3. Commit changes
+
+```bash
+git commit -m "Add new feature"
+```
+
+4. Push branch
+
+```bash
+git push origin feature/new-feature
+```
+
+5. Open Pull Request
+
+---
+
+## License
+
+Copyright © 2026 Dgramtor.
+
+All rights reserved.
+
+---
+
+## Contact
+
+Website:
+
+https://dgramtor1.vercel.app
+
+For business inquiries and demonstrations, please use the contact and request-demo sections available on the website.
