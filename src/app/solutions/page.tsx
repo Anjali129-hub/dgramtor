@@ -7,6 +7,8 @@ import {
   Home,
 } from "lucide-react";
 
+import WhyDgramtor from "@/components/why-dgramtor/WhyDgramtor";
+
 const solutions = [
   {
     icon: GraduationCap,
@@ -63,8 +65,8 @@ export default function SolutionsPage() {
           </h1>
 
           <p className="mx-auto mt-8 max-w-3xl text-lg text-gray-400">
-            Dgramtor empowers organizations across industries with
-            immersive holographic communication and collaboration.
+            Dgramtor empowers organizations across industries with immersive
+            holographic communication and collaboration.
           </p>
         </div>
       </section>
@@ -79,13 +81,13 @@ export default function SolutionsPage() {
               return (
                 <div
                   key={solution.title}
-                  className="rounded-3xl border border-white/10 bg-white/5 p-8 backdrop-blur-xl transition-all duration-300 hover:-translate-y-2 hover:border-green-500 hover:bg-white/10"
+                  className="rounded-3xl border border-white/10 bg-white/5 p-8 backdrop-blur-xl transition-all duration-300 hover:-translate-y-2 hover:border-green-500 hover:bg-white/10 hover:shadow-[0_0_40px_rgba(34,197,94,0.15)]"
                 >
                   <div className="mb-6 flex h-14 w-14 items-center justify-center rounded-2xl bg-green-500/10">
                     <Icon className="h-7 w-7 text-green-400" />
                   </div>
 
-                  <h3 className="mb-4 text-2xl font-semibold">
+                  <h3 className="mb-4 text-2xl font-semibold text-white">
                     {solution.title}
                   </h3>
 
@@ -99,17 +101,20 @@ export default function SolutionsPage() {
         </div>
       </section>
 
+      {/* Why Choose Dgramtor */}
+      <WhyDgramtor />
+
       {/* CTA */}
       <section className="pb-24">
         <div className="mx-auto max-w-5xl px-6">
           <div className="rounded-3xl border border-green-500/20 bg-green-500/5 p-12 text-center">
-            <h2 className="text-4xl font-bold">
+            <h2 className="text-4xl font-bold text-white">
               One Platform. Unlimited Possibilities.
             </h2>
 
             <p className="mt-6 text-gray-400">
-              Discover how Dgramtor can transform communication
-              within your industry.
+              Discover how Dgramtor can transform communication within your
+              industry.
             </p>
 
             <a

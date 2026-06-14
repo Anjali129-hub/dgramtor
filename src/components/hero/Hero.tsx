@@ -1,26 +1,30 @@
 "use client";
 
-import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
 
 export default function Hero() {
   return (
     <section className="relative overflow-hidden bg-black pt-40 pb-24">
-
-      {/* BACKGROUND IMAGE */}
-      <div className="absolute inset-0 z-0 flex items-center justify-center">
-        <Image
-          src="/images/hologram-device.jpeg"
-          alt="Dgramtor Hologram Device Background"
-          fill
-          priority
-          className="object-contain opacity-30 scale-105"
-        />
+      {/* BACKGROUND VIDEO */}
+      <div className="absolute inset-0 z-0">
+        <video
+          autoPlay
+          muted
+          loop
+          playsInline
+          preload="auto"
+          className="h-full w-full object-cover opacity-40"
+        >
+          <source src="/videos/hologram.mp4" type="video/mp4" />
+        </video>
       </div>
 
+      {/* DARK OVERLAY */}
+      <div className="absolute inset-0 z-0 bg-black/50" />
+
       {/* RADIAL GREEN GLOW */}
-      <div className="absolute inset-0 z-0 bg-[radial-gradient(circle_at_center,#22c55e_0%,transparent_65%)] opacity-25" />
+      <div className="absolute inset-0 z-0 bg-[radial-gradient(circle_at_center,#22c55e_0%,transparent_65%)] opacity-20" />
 
       {/* EXTRA GLOW BLOBS */}
       <div className="absolute left-0 top-0 h-96 w-96 rounded-full bg-green-500/10 blur-[120px]" />
@@ -29,7 +33,6 @@ export default function Hero() {
       {/* CONTENT */}
       <div className="relative z-10 mx-auto max-w-7xl px-6">
         <div className="grid items-center gap-16 lg:grid-cols-2">
-
           {/* LEFT CONTENT */}
           <motion.div
             initial={{ opacity: 0, x: -40 }}
@@ -49,8 +52,9 @@ export default function Hero() {
             </h2>
 
             <p className="mt-8 max-w-xl text-lg leading-8 text-gray-300">
-              Transform communication through immersive holographic technology.
-              Experience lifelike interactions, real-time collaboration, and seamless global connectivity.
+              Transform communication through immersive holographic
+              technology. Experience lifelike interactions, real-time
+              collaboration, and seamless global connectivity.
             </p>
 
             <div className="mt-10 flex flex-wrap gap-4">
@@ -73,21 +77,26 @@ export default function Hero() {
             <div className="mt-14 grid grid-cols-3 gap-8">
               <div>
                 <h3 className="text-3xl font-bold text-green-400">3D</h3>
-                <p className="mt-2 text-sm text-gray-400">Holographic Display</p>
+                <p className="mt-2 text-sm text-gray-400">
+                  Holographic Display
+                </p>
               </div>
 
               <div>
                 <h3 className="text-3xl font-bold text-green-400">Live</h3>
-                <p className="mt-2 text-sm text-gray-400">Communication</p>
+                <p className="mt-2 text-sm text-gray-400">
+                  Communication
+                </p>
               </div>
 
               <div>
                 <h3 className="text-3xl font-bold text-green-400">Global</h3>
-                <p className="mt-2 text-sm text-gray-400">Connectivity</p>
+                <p className="mt-2 text-sm text-gray-400">
+                  Connectivity
+                </p>
               </div>
             </div>
           </motion.div>
-
         </div>
       </div>
     </section>

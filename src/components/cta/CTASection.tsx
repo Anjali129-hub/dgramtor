@@ -4,7 +4,7 @@ export default function CTASection() {
   return (
     <section className="bg-black py-24">
       <div className="mx-auto max-w-5xl px-6">
-        <div className="rounded-3xl border border-cyan-500/20 bg-gradient-to-r from-cyan-500/10 to-blue-600/10 p-12 text-center">
+        <div className="rounded-3xl border border-cyan-500/20 bg-linear-to-r from-cyan-500/10 to-blue-600/10 p-12 text-center">
           <h2 className="text-4xl font-bold text-white">
             The Future of Communication Is Here
           </h2>
